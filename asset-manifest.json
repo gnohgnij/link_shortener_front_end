@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/link_shortener/static/css/main.c22f3e49.css",
+    "main.js": "/link_shortener/static/js/main.fd20706d.js",
+    "index.html": "/link_shortener/index.html",
+    "main.c22f3e49.css.map": "/link_shortener/static/css/main.c22f3e49.css.map",
+    "main.fd20706d.js.map": "/link_shortener/static/js/main.fd20706d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c22f3e49.css",
+    "static/js/main.fd20706d.js"
+  ]
+}
