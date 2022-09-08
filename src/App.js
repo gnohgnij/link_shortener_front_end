@@ -27,7 +27,6 @@ function App() {
       });
 
       let json = await res.json();
-      console.log(json);
       setNewUrl(json.url.newURL);
     } catch (err) {
       console.error(err);
