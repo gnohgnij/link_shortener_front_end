@@ -6,4 +6,4 @@ Library: ReactJS
 
 Design System: MUI
 
-Click [here](https://www.github.com/gnohgnij/link_shorterner_back_end) to view the repository for the back end
+Click [here](https://github.com/gnohgnij/link_shortener_back_end) to view the repository for the back end
