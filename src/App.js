@@ -12,6 +12,8 @@ function App() {
 
   const [newUrl, setNewUrl] = useState("");
 
+  const [helperText, setHelperText] = useState("");
+
   const [isLoaded, setIsLoaded] = useState(true);
 
   const handleFormSubmit = async (event) => {
@@ -30,7 +32,14 @@ function App() {
       });
 
       let json = await res.json();
-      setNewUrl(json.url.newURL);
+
+      if (json.status) {
+        setHelperText(json.reason);
+        setNewUrl("");
+      } else {
+        setNewUrl(json.url.newURL);
+        setHelperText("");
+      }
       setIsLoaded(true);
     } catch (err) {
       console.error(err);
@@ -49,6 +58,9 @@ function App() {
             fullWidth
             value={url}
             onChange={handleUrlChange}
+            helperText={helperText}
+            error={helperText !== "" ? true : false}
+            required
           />
           <div className="center mt-1rem">
             <Button variant="contained" type="submit">
